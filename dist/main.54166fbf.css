@@ -48,26 +48,18 @@ p {
   margin-bottom: 0;
 }
 
-.hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.container {
-  padding-left: 270px;
-  padding-right: 90px;
-  align-items: center;
-  position: relative;
-}
-
 .section {
   margin-top: 100px;
+}
+
+.btn {
+  border-radius: 20px;
+  height: 35px;
+  background-color: rgb(252, 227, 0);
+  border: none;
+  width: 120px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .swiper-1 {
@@ -146,7 +138,7 @@ p {
 
 .btn-wrap {
   display: flex;
-  margin-left: 120px;
+  margin-left: 360px;
 }
 
 .wrap-bottom-text {
@@ -154,6 +146,7 @@ p {
   align-items: center;
   margin-left: 20px;
   width: 100%;
+  margin-right: 90px;
 }
 
 .line {
@@ -219,6 +212,7 @@ p {
 
 .description {
   display: flex;
+  margin-right: 90px;
 }
 
 .vertical-line {
@@ -270,32 +264,49 @@ p {
   margin-left: 65px;
 }
 
-.btn {
-  border-radius: 20px;
-  height: 35px;
-  background-color: rgb(252, 227, 0);
-  border: none;
-  width: 120px;
-  font-size: 12px;
-  font-weight: 600;
+.pick {
+  display: flex;
+}
+.pick_description {
+  text-align: end;
+}
+.pick_title {
+  font-size: 22px;
+  color: white;
+  line-height: 1.16;
+  width: 270px;
+}
+.pick_wrap-text {
+  width: 200px;
+  margin-left: auto;
+}
+.pick_text {
+  margin-top: 25px;
+  color: white;
+  font-size: 14px;
+}
+.pick_text:last-child {
+  margin-top: 70px;
 }
 
 .featured {
   display: flex;
 }
 .featured_description {
-  width: 300px;
   text-align: end;
 }
 .featured_title {
   font-size: 22px;
   color: white;
   line-height: 1.16;
+  width: 270px;
 }
 .featured_text {
   margin-top: 25px;
   color: white;
   font-size: 14px;
+  width: 200px;
+  margin-left: auto;
 }
 .featured_text:last-child {
   margin-top: 70px;
@@ -303,8 +314,7 @@ p {
 
 .overflow-hid {
   overflow: hidden;
-  width: 100%;
-  margin: 80px 90px 0 50px;
+  margin: 90px 90px 0 90px;
 }
 
 .card img {
@@ -352,7 +362,6 @@ p {
 
 .card {
   height: 300px;
-  max-width: 100%;
 }
 
 .above-sea img {
@@ -376,7 +385,7 @@ p {
 .above-sea_sub-title {
   margin-bottom: 80px;
   font-size: 22px;
-  width: 800px;
+  width: 500px;
   font-style: italic;
   font-weight: 200;
 }
