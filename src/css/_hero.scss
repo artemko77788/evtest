@@ -1,0 +1,104 @@
+.swiper-1 {
+  position: relative;
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.dark:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(35, 80, 53, 0.538) 0%,
+    rgba(37, 37, 37, 0.25) 8%,
+    rgb(37, 37, 37) 100%
+  );
+}
+
+.description-wrap {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 99;
+}
+.hero-text {
+  color: white;
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 30px;
+}
+.hero-description {
+  color: white;
+  font-size: $fz-text;
+}
+
+.bottom-img-nav {
+  position: absolute;
+  display: flex;
+  bottom: -20px;
+  z-index: 100;
+  align-items: center;
+  width: 100%;
+}
+
+.swiper-custom-nuv {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $duration $timing-function;
+}
+.swiper-custom-nuv:hover,
+:focus {
+  background-color: $main-yellow-color;
+}
+.swiper-custom-nuv:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btn-wrap {
+  display: flex;
+  margin-left: 120px;
+}
+.wrap-bottom-text {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.line {
+  width: 100%;
+}
+.line-last {
+  width: 30px;
+}
+.bottom-text {
+  color: $text-color-white;
+  white-space: nowrap;
+  margin-right: 30px;
+}
+.pagination {
+  color: $text-color-white;
+  margin: 0 40px;
+  position: relative;
+  align-items: center;
+}
+
+.swiper-pagination {
+  display: flex;
+  bottom: -12px !important;
+}

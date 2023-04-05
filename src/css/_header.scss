@@ -1,0 +1,85 @@
+.section-wrap {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 800px;
+}
+
+.header {
+  &_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &_navigation {
+    position: absolute;
+    background-color: rgb(37, 37, 37, 0.6);
+    width: 270px;
+    height: auto !important;
+    min-height: 100%;
+  }
+}
+
+.logo-background {
+  width: 350px;
+  background-color: $main-yellow-color;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 25px;
+  margin-left: 45px;
+}
+.description {
+  display: flex;
+}
+
+.vertical-line {
+  margin: 0 30px;
+  color: $text-color-white;
+}
+
+.text {
+  font-weight: 500;
+  color: $text-color-white;
+}
+.black-dot::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+.menu-list {
+  margin-top: 60px;
+}
+.menu-item {
+  color: $text-color-grey;
+  font-size: 20px;
+  font-weight: 400;
+  overflow: hidden;
+  margin-left: 40px;
+}
+.menu-item:not(last-child) {
+  margin-bottom: 20px;
+}
+
+.active {
+  color: $text-color-white;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $text-color-white;
+    top: 50%;
+    margin-left: 65px;
+  }
+}
