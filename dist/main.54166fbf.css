@@ -111,6 +111,10 @@ p {
   font-size: 14px;
 }
 
+.hero-btn {
+  margin-top: 40px;
+}
+
 .bottom-img-nav {
   position: absolute;
   display: flex;
@@ -266,6 +270,16 @@ p {
   margin-left: 65px;
 }
 
+.btn {
+  border-radius: 20px;
+  height: 35px;
+  background-color: rgb(252, 227, 0);
+  border: none;
+  width: 120px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .featured {
   display: flex;
 }
@@ -339,6 +353,42 @@ p {
 .card {
   height: 300px;
   max-width: 100%;
+}
+
+.above-sea img {
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.above-sea {
+  margin-top: 150px;
+  display: flex;
+}
+.above-sea_description {
+  margin-left: 100px;
+  color: white;
+}
+.above-sea_title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.above-sea_sub-title {
+  margin-bottom: 80px;
+  font-size: 22px;
+  width: 800px;
+  font-style: italic;
+  font-weight: 200;
+}
+.above-sea_text {
+  width: 400px;
+  font-size: 14px;
+}
+.above-sea_text:last-child {
+  margin-top: 30px;
+}
+.above-sea_btn-wrap {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */
