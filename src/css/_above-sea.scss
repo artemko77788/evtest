@@ -1,0 +1,35 @@
+.above-sea img {
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.above-sea {
+  margin-top: 150px;
+  display: flex;
+  &_description {
+    margin-left: 100px;
+    color: $text-color-white;
+  }
+  &_title {
+    font-size: $fz-big;
+    margin-bottom: 20px;
+  }
+  &_sub-title {
+    margin-bottom: 80px;
+    font-size: $fz-title;
+    width: 800px;
+    font-style: italic;
+    font-weight: 200;
+  }
+  &_text {
+    width: 400px;
+    font-size: $fz-text;
+  }
+  &_text:last-child {
+    margin-top: 30px;
+  }
+  &_btn-wrap {
+    margin-top: 40px;
+  }
+}
