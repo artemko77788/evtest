@@ -1,0 +1,24 @@
+.pick {
+  display: flex;
+  &_description {
+    text-align: end;
+  }
+  &_title {
+    font-size: $fz-title;
+    color: $text-color-white;
+    line-height: 1.16;
+    width: 270px;
+  }
+  &_wrap-text {
+    width: 200px;
+    margin-left: auto;
+  }
+  &_text {
+    margin-top: 25px;
+    color: $text-color-white;
+    font-size: $fz-text;
+  }
+  &_text:last-child {
+    margin-top: 70px;
+  }
+}
