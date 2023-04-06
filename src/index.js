@@ -23,3 +23,15 @@ new Swiper("#swiper-2", {
     type: "fraction",
   },
 });
+
+new Swiper(".swiper-3", {
+  effect: "fade",
+  navigation: {
+    nextEl: "#pick-right",
+    prevEl: "#pick-left",
+  },
+  pagination: {
+    el: ".pick-pagination",
+    type: "fraction",
+  },
+});
