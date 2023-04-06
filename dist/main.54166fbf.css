@@ -264,8 +264,10 @@ p {
   margin-left: 65px;
 }
 
-.pick {
-  display: flex;
+@media (min-width: 768px) {
+  .pick {
+    display: flex;
+  }
 }
 .pick_description {
   text-align: end;
@@ -291,6 +293,11 @@ p {
 
 .wrap-pick {
   display: flex;
+}
+
+.bottom-nav {
+  display: flex;
+  width: 600px;
 }
 
 .featured {
@@ -319,12 +326,6 @@ p {
 .overflow-hid {
   overflow: hidden;
   margin: 90px 90px 0 90px;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .cards-description {
@@ -357,7 +358,7 @@ p {
 }
 
 .pagination-container {
-  width: 50px;
+  width: 70px;
 }
 
 .modif-wrap {
@@ -365,22 +366,59 @@ p {
 }
 
 .card {
-  height: 300px;
+  width: 100%;
+  position: relative;
 }
 
-.above-sea img {
-  width: 700px;
-  height: 700px;
+.card:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card img {
   object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .above-sea {
   margin-top: 150px;
-  display: flex;
+}
+@media (min-width: 768px) {
+  .above-sea {
+    display: flex;
+  }
+}
+.above-sea_image-wrap {
+  width: 100%;
+  position: relative;
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .above-sea_image-wrap {
+    height: auto;
+  }
+}
+.above-sea .card:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.above-sea_image-wrap img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .above-sea_description {
-  margin-left: 100px;
   color: white;
+}
+@media (min-width: 768px) {
+  .above-sea_description {
+    margin-left: 100px;
+  }
 }
 .above-sea_title {
   font-size: 50px;
@@ -389,12 +427,10 @@ p {
 .above-sea_sub-title {
   margin-bottom: 80px;
   font-size: 22px;
-  width: 500px;
   font-style: italic;
   font-weight: 200;
 }
 .above-sea_text {
-  width: 400px;
   font-size: 14px;
 }
 .above-sea_text:last-child {
@@ -402,11 +438,6 @@ p {
 }
 .above-sea_btn-wrap {
   margin-top: 40px;
-}
-
-.bottom-nav {
-  display: flex;
-  width: 600px;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */

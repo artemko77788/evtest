@@ -1,14 +1,36 @@
-.above-sea img {
-  width: 700px;
-  height: 700px;
-  object-fit: cover;
-}
-
 .above-sea {
   margin-top: 150px;
-  display: flex;
+
+  @include for-size(tablet) {
+    display: flex;
+  }
+  &_image-wrap {
+    width: 100%;
+    position: relative;
+    height: 400px;
+
+    @include for-size(tablet) {
+      height: auto;
+    }
+  }
+  .card:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  &_image-wrap img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
   &_description {
-    margin-left: 100px;
+    @include for-size(tablet) {
+      margin-left: 100px;
+    }
+
     color: $text-color-white;
   }
   &_title {
@@ -18,12 +40,11 @@
   &_sub-title {
     margin-bottom: 80px;
     font-size: $fz-title;
-    width: 500px;
+
     font-style: italic;
     font-weight: 200;
   }
   &_text {
-    width: 400px;
     font-size: $fz-text;
   }
   &_text:last-child {
@@ -32,9 +53,4 @@
   &_btn-wrap {
     margin-top: 40px;
   }
-}
-
-.bottom-nav {
-  display: flex;
-  width: 600px;
 }

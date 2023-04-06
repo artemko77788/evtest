@@ -27,12 +27,6 @@
   margin: 90px 90px 0 90px;
 }
 
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .cards-description {
   display: flex;
   flex-direction: column;
@@ -61,11 +55,24 @@
   display: flex;
 }
 .pagination-container {
-  width: 50px;
+  width: 70px;
 }
 .modif-wrap {
   margin: 0;
 }
 .card {
-  height: 300px;
+  width: 100%;
+  position: relative;
+}
+.card:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
