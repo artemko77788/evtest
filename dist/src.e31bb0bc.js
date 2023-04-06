@@ -134,12 +134,22 @@ new Swiper("#swiper-1", {
   }
 });
 new Swiper("#swiper-2", {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 1,
   freeMode: true,
+  spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination-card",
     type: "fraction"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    920: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
   }
 });
 new Swiper(".swiper-3", {
