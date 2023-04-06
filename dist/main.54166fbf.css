@@ -289,6 +289,10 @@ p {
   margin-top: 70px;
 }
 
+.wrap-pick {
+  display: flex;
+}
+
 .featured {
   display: flex;
 }
@@ -398,6 +402,11 @@ p {
 }
 .above-sea_btn-wrap {
   margin-top: 40px;
+}
+
+.bottom-nav {
+  display: flex;
+  width: 600px;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */
