@@ -1,7 +1,5 @@
 .above-sea {
-  margin-top: 150px;
-
-  @include for-size(tablet) {
+  @include for-size(desktop) {
     display: flex;
   }
   &_image-wrap {
@@ -9,7 +7,7 @@
     position: relative;
     height: 400px;
 
-    @include for-size(tablet) {
+    @include for-size(desktop) {
       height: auto;
     }
   }
@@ -34,13 +32,15 @@
     color: $text-color-white;
   }
   &_title {
-    font-size: $fz-big;
+    font-size: $fz-big-phone;
     margin-bottom: 20px;
+    @include for-size(tablet) {
+      font-size: $fz-big;
+    }
   }
   &_sub-title {
     margin-bottom: 80px;
-    font-size: $fz-title;
-
+    font-size: $fz-text;
     font-style: italic;
     font-weight: 200;
   }

@@ -11,23 +11,39 @@
     font-size: $fz-title;
     color: $text-color-white;
     line-height: 1.16;
-    width: 270px;
+    margin-bottom: 20px;
+    text-align: center;
+    @include for-size(tablet) {
+      width: 270px;
+      text-align: end;
+    }
   }
   &_text {
     margin-top: 25px;
     color: $text-color-white;
     font-size: $fz-text;
-    width: 200px;
-    margin-left: auto;
+    margin: 0 auto;
+    width: 250px;
+    @include for-size(tablet) {
+      margin-left: auto;
+      width: 200px;
+      margin-right: 0;
+    }
   }
   &_text:last-child {
     margin-top: 70px;
+    text-align: center;
+    @include for-size(tablet) {
+      text-align: end;
+    }
   }
 }
 .overflow-hid {
   overflow: hidden;
-
-  margin: 90px 90px 0 90px;
+  margin: 40px 40px 0 40px;
+  @include for-size(tablet) {
+    margin: 90px 90px 0 40px;
+  }
 }
 
 .cards-description {
@@ -57,11 +73,15 @@
 .featured-bottom-pagination {
   display: flex;
 }
-.pagination-container {
-  width: 70px;
+
+.swiper-pagination-card {
+  width: 40px;
 }
+
 .modif-wrap {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 .card {
   width: 100%;

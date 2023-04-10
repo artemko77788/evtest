@@ -13,7 +13,7 @@
 
   <body>
     <section class="section-wrap">
-  <header class="header">
+  <header class="header" id="header">
     <div>
       <div class="header_wrap">
         <div class="logo-background">
@@ -25,34 +25,57 @@
           <p class="text">Galih pambudi</p>
         </div>
       </div>
-      <button type="button" class="burger-btn" data-menu-open="">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-        </svg>
-      </button>
+      <div class="burger-wrap">
+        <button type="button" class="burger-btn" data-menu-open="">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </button>
 
-      <div class="burger-menu" data-menu="">
-        <div>
-          <button type="button" class="burger-menu__button" data-menu-close="">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775" xml:space="preserve">
-              <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+        <div class="burger-menu" data-menu="">
+          <div>
+            <button type="button" class="burger-menu__button" data-menu-close="">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775" xml:space="preserve">
+                <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
          c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
          c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
          c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
          l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
          c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path>
-            </svg>
-          </button>
+              </svg>
+            </button>
+          </div>
+          <nav class="header_navigation">
+            <ul class="menu-list">
+              <li class="menu-item active">
+                <a href="#header" class="menu-link"> Home </a>
+              </li>
+              <li class="menu-item">
+                <a href="#recommendation" class="menu-link"> Recommendation </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link"> Explore </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link"> Help </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link"> About us </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
+      <div class="nav">
         <nav class="header_navigation">
           <ul class="menu-list">
             <li class="menu-item active">
-              <a href="#" class="menu-link"> Home </a>
+              <a href="#header" class="menu-link"> Home </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link"> Recommendation </a>
+              <a href="#recommendation" class="menu-link"> Recommendation </a>
             </li>
             <li class="menu-item">
               <a href="#" class="menu-link"> Explore </a>
@@ -75,7 +98,7 @@
   <div class="swiper-1" id="swiper-1">
     <div class="swiper-wrapper" slides-per-view="1">
       <div class="swiper-slide">
-        <div class="description-wrap">
+        <div class="description-wrap" hero="">
           <h2 class="hero-text">The Walchen Lacke</h2>
 
           <p class="hero-description">
@@ -92,7 +115,7 @@
       </div>
 
       <div class="swiper-slide">
-        <div class="description-wrap">
+        <div class="description-wrap" hero="">
           <h2 class="hero-text">The Walchen Lacke</h2>
 
           <p class="hero-description">
@@ -106,7 +129,7 @@
       </div>
 
       <div class="swiper-slide">
-        <div class="description-wrap">
+        <div class="description-wrap" hero="">
           <h2 class="hero-text">The Walchen Lacke</h2>
 
           <p class="hero-description">
@@ -119,7 +142,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="description-wrap">
+        <div class="description-wrap" hero="">
           <h2 class="hero-text">The Walchen Lacke</h2>
 
           <p class="hero-description">
@@ -132,7 +155,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="description-wrap">
+        <div class="description-wrap" hero="">
           <h2 class="hero-text">The Walchen Lacke</h2>
 
           <p class="hero-description">
@@ -172,9 +195,155 @@
   </div>
 </section>
 
-      <!-- <include src="./partials/featured.html"></include>
-      <include src="./partials/above-sea.html"></include>
-      <include src="./partials/pick.html"></include> -->
+      <section class="section">
+  <div class="featured" id="recommendation">
+    <div class="featured_description container">
+      <h2 class="featured_title">
+        Featured <br>
+        Sports
+      </h2>
+      <p class="featured_text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, ratione.
+      </p>
+      <p class="featured_text">Viev all</p>
+    </div>
+    <div class="overflow-hid">
+      <div class="swiper-2" id="swiper-2">
+        <div class="swiper-wrapper" slides-per-view="3">
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="/slide-5.17aacc59.jpg">
+            </div>
+            <div class="cards-description">
+              <h3 class="cards-description_title">Ollantaytambo</h3>
+              <p class="cards-description_title-gray">Lorem.</p>
+              <p class="cards-description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, necessitatibus.
+              </p>
+              <a class="cards-description_text-more" href="">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="/slide-2.2f96cdcf.jpg">
+            </div>
+            <div class="card_description">
+              <h3 class="cards-description_title">Antelope</h3>
+              <p class="cards-description_title-gray">Lorem.</p>
+              <p class="cards-description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, necessitatibus.
+              </p>
+              <a class="cards-description_text-more" href="">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="/slide-3.aeecff74.jpg">
+            </div>
+            <div class="card_description">
+              <h3 class="cards-description_title">Lake Louise</h3>
+              <p class="cards-description_title-gray">Lorem.</p>
+              <p class="cards-description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, necessitatibus.
+              </p>
+              <a class="cards-description_text-more" href="">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="/slide-1.a490068a.jpg">
+            </div>
+            <div class="card_description">
+              <h3 class="cards-description_title">Lorem, ipsum.</h3>
+              <p class="cards-description_title-gray">Lorem.</p>
+              <p class="cards-description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, necessitatibus.
+              </p>
+              <a class="cards-description_text-more" href="">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="/slide-4.1bb0349f.jpg">
+            </div>
+            <div class="card_description">
+              <h3 class="cards-description_title">Lorem, ipsum.</h3>
+              <p class="cards-description_title-gray">Lorem.</p>
+              <p class="cards-description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, necessitatibus.
+              </p>
+              <a class="cards-description_text-more" href="">read more</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="/slide-5.17aacc59.jpg">
+            </div>
+            <div class="card_description">
+              <h3 class="cards-description_title">Lorem, ipsum.</h3>
+              <p class="cards-description_title-gray">Lorem.</p>
+              <p class="cards-description_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus, necessitatibus.
+              </p>
+              <a class="cards-description_text-more" href="">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured-bottom-pagination container">
+    <div class="wrap-bottom-text modif-wrap">
+      <p class="bottom-text">Outdoors Edition</p>
+      <hr class="line">
+      <div class="pagination pagination-container">
+        <div class="swiper-pagination-card"></div>
+      </div>
+      <hr class="line-last">
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="above-sea">
+    <div class="above-sea_image-wrap">
+      <img src="/above-the-sea.d3208cfe.jpg" alt="picture sea">
+    </div>
+    <div class="above-sea_description container">
+      <h2 class="above-sea_title">Above the sea</h2>
+      <h3 class="above-sea_sub-title">
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+        praesentium reiciendis veritatis fuga commodi obcaecati possimus
+        reiciendis "
+      </h3>
+      <p class="above-sea_text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+        suscipit sed blanditiis neque voluptates, voluptatum, eaque magnam
+        quidem recusandae cum reiciendis tempore dignissimos laudantium quia
+        fuga sequi nam ullam omnis?
+      </p>
+      <p class="above-sea_text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur
+        vitae assumenda, est odit iure pariatur autem totam esse quae possimus,
+        consectetur laboriosam necessitatibus, id vero aut dolorum. vitae
+        assumenda, est odit iure pariatur autem totam esse quae possimus,
+        consectetur laboriosam necessitatibus, id vero aut dolorum.
+      </p>
+      <div class="above-sea_btn-wrap">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- <include src="./partials/pick.html"></include> -->
     </main>
 
     <script src="/src.e31bb0bc.js" type="module"></script>
